@@ -1,0 +1,15 @@
+FROM node
+WORKDIR /app
+COPY . /app
+RUN npm install
+EXPOSE 3000
+CMD ["node","server.js"]
+touch Dockerfile
+cd node-app
+docker build -t imagone .
+docker build -t imagtwo.
+docker run -p 3002:3000 c1-one f15c858ed956493a3fcc981216d16a4e91cfaa9a3b98e303b4a74537af8546a1
+docker start -a c1-one
+docker stop c1-one
+docker build -t imag:2
+docker run -p 3007:80 --rm --name c5-fiver  imag:2
